@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+<_name>Circles on circle</_name>
+<id>com.KaTaai.Circles_on_circle</id>
+<dependency type="executable" location="extensions">Circles_on_circle_gui.py</dependency>
+<dependency type="executable" location="extensions">inkex.py</dependency>
+<param name="active-tab" type="notebook"> 
+    <page name="main_menu" _gui-text="Main menu">
+        <param name="d-main" type="float" precision="3" min="0.001" max="10000.000" _gui-text="Diameter main circle">25.000</param>
+        <param name="d-small" type="float" precision="3" min="0.001" max="10000.000" _gui-text="Diameter small circles">2.000</param>
+        <param name="num-small-circles" type="int" min="1" max="100" _gui-text="Number of small circles">4</param>
+        <param name="stroke-w-main" type="float" precision="3" min="0.001" max="1000.000" _gui-text="Stroke width main circle">0.500</param>
+        <param name="stroke-w-small" type="float" precision="3" min="0.001" max="1000.000" _gui-text="Stroke width small circles">0.500</param>
+        
+        <param name="angle" type="float" precision="3" min="0.000" max="360.000" _gui-text="Clockwise rotation of figure (degrees)" appearance="full">0.000</param>
+        <param name="circle-pos" type="optiongroup" appearance="radio" gui-text="The outward position of the circles">
+            <option value="centre-on-edge">Circles on edge</option>
+            <option value="centre-over-edge">Circles over edge</option>
+            <option value="circles-inner-edge">Circles against inner edge</option>
+            <option value="circles-outer-edge">Circles against outer edge</option>
+        </param>
+        <param name="Individual-circle-control" type="boolean" _gui-text="Use individual circle control max 10">false</param>
+    </page>
+    <page name="circle_menu" _gui-text="Circle menu">
+        <hbox>
+            <label>#</label>
+            <label>include</label>
+            <label>diameter</label>
+            <label>stroke width</label>
+        </hbox>
+        <hbox>
+            <label>1</label>
+            <param name="include-1" type="boolean" _gui-text="">false</param>
+            <param name="diameter-1" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-1" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>2</label>
+            <param name="include-2" type="boolean" _gui-text="">false</param>
+            <param name="diameter-2" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-2" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>3</label>
+            <param name="include-3" type="boolean" _gui-text="">false</param>
+            <param name="diameter-3" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-3" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>4</label>
+            <param name="include-4" type="boolean" _gui-text="">false</param>
+            <param name="diameter-4" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-4" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>5</label>
+            <param name="include-5" type="boolean" _gui-text="">false</param>
+            <param name="diameter-5" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-5" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>6</label>
+            <param name="include-6" type="boolean" _gui-text="">false</param>
+            <param name="diameter-6" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-6" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>7</label>
+            <param name="include-7" type="boolean" _gui-text="">false</param>
+            <param name="diameter-7" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-7" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>8</label>
+            <param name="include-8" type="boolean" _gui-text="">false</param>
+            <param name="diameter-8" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-8" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>9</label>
+            <param name="include-9" type="boolean" _gui-text="">false</param>
+            <param name="diameter-9" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-9" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+        <hbox>
+            <label>10</label>
+            <param name="include-10" type="boolean" _gui-text="">false</param>
+            <param name="diameter-10" type="float" precision="3" min="0.001" max="10000.000" _gui-text="">2</param>
+            <param name="stroke-w-10" type="float" precision="3" min="0.001" max="1000.000" _gui-text="">0.500</param>
+        </hbox>
+    </page>
+</param>
+<effect>
+    <object-type>all</object-type>
+    <effects-menu>
+        <submenu _name="KaTaai"/>
+    </effects-menu>
+</effect>
+<script>
+    <command reldir="extensions" interpreter="python">Circles_on_circle_gui.py</command>
+</script>
+</inkscape-extension>

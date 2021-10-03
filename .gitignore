@@ -1,0 +1,11 @@
+# VS Code files
+.vscode
+*.code-workspace
+
+# Environments
+InkscapeVenv/
+
+#random files
+circle.svg
+test.py
+circle bullshit.png
